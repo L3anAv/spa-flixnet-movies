@@ -3,6 +3,7 @@ import { formParaLogin } from "../components/formLogin.js";
 import { contenidoParaBody } from "../components/contenidoBody.js";
 import { funcionalidadSlider } from "../helpers/funcionalidadSlider.js";
 import { funcionalidadMenuResponsive } from "../helpers/responsiveMenu.js";
+import { darFormularioRegistro } from "../components/crearFormRegistro.js";
 import { manejadorDivRegistrarse } from "../helpers/divFooterManejador.js";
 import { manejadorGenerosSolicitadoPorMenu } from "../helpers/manejadorDeContenidoPorGenero.js";
 
@@ -107,8 +108,8 @@ function manejadorContenidos(){
             
 
     } else if(path === "/registro"){
-             
-        $ROOT.innerText = "registro va aqui"
+        
+        $ROOT.appendChild(darFormularioRegistro())
 
         // --> Funcionalidades
         manejadorDivRegistrarse(path)

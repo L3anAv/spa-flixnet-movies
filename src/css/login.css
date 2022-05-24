@@ -20,6 +20,17 @@ h1 {
     color: #3d635e;
 }
 
+.padre h2 {
+    
+    margin-top: 0px;
+    font-family: 'Merriweather Sans';
+    text-align: left;
+    font-weight: 700;
+    font-size: 25px;
+    color: #c52014;
+    
+}
+
 form {
 
     width: 22%;

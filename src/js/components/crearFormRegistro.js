@@ -6,23 +6,28 @@ export function darFormularioRegistro(){
     const $form = d.createElement('form')
     const $divForm = d.createElement('div')
     const $TituloForm = d.createElement('h2')
-    
+    const $buttom = d.createElement('button')
+
     const divElements = [
-        {id: "user", name: "nombre", type: "text", labelContent: "Usuario", spanClass: "barra", spanId: "barra"},
-        {id: "pass1", name: "", type: "password", labelContent: "Contraseña", spanClass: "barra", spanId: ""},
-        {id: "pass2", name: "", type: "password", labelContent: "Verficar Contraseña", spanClass: "barra", spanId: ""},
-        {id: "email1", name: "", type: "email", labelContent: "Email", spanClass: "barra", spanId: ""}
+        {id: "user", name: "nombre", type: "text", labelContent: "Usuario", spanOneClass: "barra", spanOneId: "barra", spanTwoWarningClass: "warning", spanTwoWarningId: "warning"},
+        {id: "pass1", name: "", type: "password", labelContent: "Contraseña", spanClass: "barra", spanId: "", spanTwoWarningClass: "warning", spanTwoWarningId: "warning"},
+        {id: "pass2", name: "", type: "password", labelContent: "Verficar Contraseña", spanClass: "barra", spanId: "", spanTwoWarningClass: "warning", spanTwoWarningId: "warning"},
+        {id: "email1", name: "", type: "email", labelContent: "Email", spanClass: "barra", spanId: "", spanTwoWarningClass: "warning", spanTwoWarningId: "warning"}
         
     ]
 
+    // --> Clases
+    $form.classList.add('padre')
+    $divForm.classList.add('form')
+
     // --> Rellenando elemento
     $TituloForm.innerHTML = "<h2>Registro</h2>"
-
-    // --> 
+    $buttom.innerText = "Registrarse"
 
     // --> Insertando elementos en el form
     $form.appendChild($TituloForm)
     $form.appendChild(rellenarElForm(divElements, $divForm))
+    $divForm.appendChild($buttom)
 
     return $form
 }   
@@ -39,15 +44,14 @@ function rellenarElForm(divElements, $divForm){
         const $spanWarning = d.createElement('span')
 
         // --> Agregando clases e id
-        $divGrupo.classList.add('form')
 
         $divGrupo.classList.add('grupo')
 
-        $spanBar.classList.add('barra')
-        $spanBar.setAttribute('id', 'barra')
+        $spanBar.classList.add(`${elemento.spanClass}`)
+        $spanBar.setAttribute('id', `${elemento.spanId}`)
         
-        $spanWarning.classList.add('barra')
-        $spanWarning.setAttribute('id', 'barra')
+        $spanWarning.classList.add(`${elemento.spanTwoWarningClass}`)
+        $spanWarning.setAttribute('id', `${elemento.spanTwoWarningId}`)
 
         // --> Seteando Atributos Input
         $input.setAttribute('id', `${elemento.id}`)

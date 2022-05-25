@@ -26,7 +26,8 @@ function obtenerArray(){
 
 /* 
     --> CAMBIAR ESTA FUNCION: https://youtu.be/F7Mi1c3DFBs.
-*/ 
+        --> Tengo que cambiar la estructura del DOOM
+*/
 export async function funcionalidadSlider(){
 
     // --> Seleccionando Elementos
@@ -85,8 +86,6 @@ export async function funcionalidadSlider(){
     */
     
 }
-
-/* Tengo que cambiar a grid la reputa madre */
 
 function changePosition(ajusteSliderPos, array){
 

@@ -1,6 +1,7 @@
 let posSlider = 0;
 let tiempo = 0;
 
+const d = document
 
 /* 
 >> Funcion que espera que el DOOM cargue los sliders Y luego, Utilizando Promesas, 
@@ -27,7 +28,18 @@ function obtenerArray(){
     --> CAMBIAR ESTA FUNCION: https://youtu.be/F7Mi1c3DFBs.
 */ 
 export async function funcionalidadSlider(){
-    
+
+    // --> Seleccionando Elementos
+    const arraySliders = await obtenerArray();
+    const $btn_izq = document.querySelector('.fa-chevron-left');
+    const $btn_der = document.querySelector('.fa-chevron-right');
+
+    //console.log(arraySliders)
+
+    $btn_der.addEventListener('click', () => changePosition(1,arraySliders))
+    $btn_izq.addEventListener('click', () => changePosition(-1,arraySliders))
+
+    /*
     const $btn_izq = document.querySelector('.fa-chevron-left');
     const $btn_der = document.querySelector('.fa-chevron-right');
     
@@ -70,10 +82,34 @@ export async function funcionalidadSlider(){
 
         pasoDelTiempo()
     }
-    
+    */
     
 }
 
+/* Tengo que cambiar a grid la reputa madre */
+
+function changePosition(ajusteSliderPos, array){
+
+    let value
+    const elementoActual = Number(d.querySelector('.slider-actual').dataset.id)
+    
+
+    value = elementoActual
+    value += ajusteSliderPos
+
+    
+ /* console.log(value)
+    console.log(array[value-1])
+    console.log(array[elementoActual-1])
+    console.log(elementoActual, ajusteSliderPos) */
+    
+    
+ /* array[elementoActual-1].classList.toggle('slider-actual')*/
+    array[value-1].classList.toggle('slider-actual')
+    
+}
+
+/*
 function pasoDelTiempo(){
 
     if(tiempo = 1){
@@ -87,3 +123,4 @@ function pasoDelTiempo(){
 
     }
 }
+*/

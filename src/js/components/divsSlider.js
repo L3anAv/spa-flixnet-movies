@@ -11,8 +11,11 @@ export function devolverDivSlider(elementoInsertar, index, titulo){
     const $div_contenedor = d.createElement('div');
     
     // --> Agregando Clases
-    $div_contenedor.classList.add('p');
     $div_contenedor.classList.add('pelicula--show'); // Agrego la clase correspondiente (Segun su data-id).
+    
+    if(index === 0){
+        $div_contenedor.classList.add('slider-actual');
+    }
     
     // --> Agregado Data Id al Div
     $div_contenedor.dataset.id = `${index+1}`; //Agrego el valor de data-id.
@@ -31,8 +34,8 @@ export function devolverDivSlider(elementoInsertar, index, titulo){
     $descripcionPeli.innerText = `${elementoInsertar.overview}`;
 
     // --> Inserccion dentro del Div Contenedor
-    $div_contenedor.appendChild($imgPeli);
     $div_contenedor.appendChild($tituloPeli);
+    $div_contenedor.appendChild($imgPeli);    
     $div_contenedor.appendChild($descripcionPeli);
     
     // --> Retono el Div Con Contenido

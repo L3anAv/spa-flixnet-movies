@@ -45,13 +45,21 @@ export async function funcionalidadSlider(){
     
 }
 
-function changePosition(ajusteSliderPos,array){
+async function changePosition(ajusteSliderPos,array){
 
     let value
     const elementoActual = Number(d.querySelector('.slider-actual').dataset.id)
-    
+    const cantidadSliders = d.querySelector('.contenedor-peliculas').childElementCount
+
     value = elementoActual
     value += ajusteSliderPos
+    
+    console.log(value)
+    console.log(cantidadSliders)
+
+    if(value === 0 || value === cantidadSliders+1){
+        value = value === 0 ? cantidadSliders : 1;
+    }
     
     array[value-1].classList.toggle('slider-actual')
     array[elementoActual-1].classList.toggle('slider-actual')

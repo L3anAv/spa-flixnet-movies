@@ -29,11 +29,6 @@
 }
 
 .contenedor-peliculas{
-    /*
-    display:flex;
-    padding:0;
-    width:300%;
-    */
 
     grid-column: 1/4; 
     grid-row: 1/2; 
@@ -42,19 +37,22 @@
     align-items: center;
     height: 95vh;
     
-
-    /*animation: cambio 30s infinite alternate;*/
 }
 
 .pelicula--show{
 
     opacity: 0;
+    display: none;
+    visibility: hidden;
+    transition: opacity 2.5s;
 
 }
 
 .slider-actual{
 
     opacity: 1;
+    display: grid;
+    visibility: visible;
 
 }
 
@@ -113,61 +111,6 @@
 
 }
 
-@keyframes primera-hacia-segunda{
-
-    0% {margin-left:0;}
-    100% {margin-left:-100%;}
-
-}
-
-@keyframes primera-hacia-tercera{
-
-    0% {margin-left:-0%;}
-    100% {margin-left:-200%;}
-
-}
-
-@keyframes segunda{
-
-    0% {margin-left:0;}
-    100% {margin-left:-100%;}
-
-}
-
-@keyframes segunda-hacia-tercera{
-
-    0% {margin-left:-100%;}
-    100% {margin-left:-200%;}
-
-}
-
-@keyframes tercera-hacia-primera{
-
-    0% {margin-left:-200%;}
-    100% {margin-left:-0%;}
-
-}
-
-@keyframes tercera-hacia-segunda {
-    
-    0% {margin-left:-200%;}
-    100%{margin-left: -100%;}
-}
-
-
-@keyframes cambio{
-
-    0% {margin-left:0;}
-    30% {margin-left:0;}
-
-    35%{margin-left: -100%;}
-    75%{margin-left: -100%;}
-
-    85%{margin-left: -200%;}
-    100%{margin-left: -200%;}
-
-}
-
 .fa-chevron-left{
 
     position: absolute;
@@ -191,7 +134,6 @@
     position: absolute;
     top:50%;
     right:10px;
-    /*margin-left: 90%;*/
     font-size: 60px;
     color:#fff;
     opacity: 0.4;

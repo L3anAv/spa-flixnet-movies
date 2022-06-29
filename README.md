@@ -2,7 +2,7 @@
 
 ###### _*Web de series y películas.*_   
 
-Aplicación Single Page Application construida con:
+Single Page Application construida con:
 
 ![My Skills](https://skillicons.dev/icons?i=html,css,js)
 

@@ -11,7 +11,7 @@ Single Page Application construida con:
 ![App Screenshot](/index.png)
 
 
-## ~ Objetivos
+## # Objetivos
 
 El principal objetivo de este proyecto fue construir una **Single Page Aplication** con **Vanilla JS**.  
 

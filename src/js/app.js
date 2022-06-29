@@ -7,7 +7,7 @@ import { devolverDivRegistrarse } from "./components/divRegistrarse.js"
 
 // --> Variables Principales
 const $ROOT = document.getElementById('main'); 
-const donde = '/';
+const donde = "/";
 const $footer = footer()
 
 // --> Funcion Principal de la SPA

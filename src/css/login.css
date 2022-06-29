@@ -33,7 +33,7 @@ h1 {
 
 form {
 
-    width: 22%;
+    width: 30%;
     margin-top: 5%;
     padding: 35px 25px;
     border-radius: 10px;
@@ -136,7 +136,7 @@ button:hover{
 }
 
 .finalrTextForm  {
-    font-size: 11px;
+    font-size: 12px;
     font-family: 'Merriweather Sans';
     display: flex;
     justify-content: center;
@@ -153,5 +153,25 @@ a:hover  {
     text-decoration: underline;
 }
 
+@media (max-width: 900px){
 
+    .finalrTextForm  {
+        font-size: 11px;
+    }
+}
 
+@media (max-width: 700px){
+
+    form {
+
+        width: 50%;
+        margin-top: 5%;
+        padding: 35px 25px;
+        border-radius: 10px;
+    
+    }
+
+    .finalrTextForm  {
+        font-size: 10px;
+    }
+}

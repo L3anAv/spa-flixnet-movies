@@ -1,11 +1,8 @@
 import { App } from "./app.js";
-import { Router } from "./router/router.js";
 
-const d = document;
+const d = document
+const w = window
 
 // --> Ejecucion de APP y Router
-
-d.addEventListener('DOMContentLoaded', App);
-d.addEventListener('DOMContentLoaded', Router);
-
-
+d.addEventListener('DOMContentLoaded', App)
+w.addEventListener('onpopstate', App)

@@ -126,7 +126,6 @@ function manejadorContenidos(){
         
 }
 
-
 /* Manejadores de eventos adicionales */
 window.onpopstate = manejadorContenidos;
 window.route = colocarRuta;

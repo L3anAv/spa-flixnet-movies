@@ -6,12 +6,12 @@ Single Page Application construida con:
 
 ![My Skills](https://skillicons.dev/icons?i=html,css,js)
 
-## SPA Preview
+## SPA Preview (Desktop/PC)
 
 ![App Screenshot](/index.png)
 
 
-## ~ Objetivos
+## # Objetivos
 
 El principal objetivo de este proyecto fue construir una **Single Page Aplication** con **Vanilla JS**.  
 

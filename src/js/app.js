@@ -1,3 +1,4 @@
+import { Router } from "./router/router.js";
 import { footer } from "./components/footer.js";
 import { devolverHeader } from "./components/header.js";
 import { SliderParaBody } from "./components/slider.js";
@@ -7,12 +8,12 @@ import { devolverDivRegistrarse } from "./components/divRegistrarse.js"
 
 // --> Variables Principales
 const $ROOT = document.getElementById('main'); 
-const donde = "/";
+const donde = 'movies';
 const $footer = footer()
 
 // --> Funcion Principal de la SPA
 export function App(){
-
+    
     // --> Header con Menu De Navegacion
     $ROOT.insertAdjacentElement('beforebegin', devolverHeader())
 

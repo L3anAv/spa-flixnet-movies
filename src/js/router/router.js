@@ -77,7 +77,6 @@ function manejadorContenidos(){
     // --> Contenido segun Path
     if(path === "/" || path === ""){
 
-            
         $ROOT.appendChild(SliderParaBody(movies));
         $ROOT.appendChild(contenidoParaBody(movies));
         

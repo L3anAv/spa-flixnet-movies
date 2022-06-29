@@ -8,7 +8,7 @@ Aplicación Single Page Application construida con:
 
 ## SPA Preview
 
-![App Screenshot](../Flix/index.png)
+![App Screenshot](/index.png)
 
 
 ## ~ Objetivos

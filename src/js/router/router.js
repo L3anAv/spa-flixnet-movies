@@ -75,7 +75,7 @@ function manejadorContenidos(){
     $ROOT.innerText = ''
 
     // --> Contenido segun Path
-    if(path === "/" || path === ""){
+    if(path === "/" || path === "/index.html"){
 
         $ROOT.appendChild(SliderParaBody(movies));
         $ROOT.appendChild(contenidoParaBody(movies));
@@ -127,8 +127,9 @@ function manejadorContenidos(){
 }
 
 /* Manejadores de eventos adicionales */
-window.onpopstate = manejadorContenidos;
 window.route = colocarRuta;
+window.onpopstate = manejadorContenidos;
+
 manejadorContenidos();
 
 }

@@ -8,11 +8,11 @@ import { devolverDivRegistrarse } from "./components/divRegistrarse.js"
 
 // --> Variables Principales
 const $ROOT = document.getElementById('main'); 
-const donde = 'movies';
+const donde = "movies";
 const $footer = footer()
 
 // --> Funcion Principal de la SPA
-export function App(){
+export async function App(){
     
     
     // --> Header con Menu De Navegacion
@@ -20,16 +20,18 @@ export function App(){
 
     // --> Contenido Del Cuerpo de la SPA
     $ROOT.appendChild(SliderParaBody(donde))
-    $ROOT.insertAdjacentElement('afterbegin', contenidoParaBody(donde));
+    $ROOT.insertAdjacentElement('afterbegin', contenidoParaBody(donde))
 
+    //--> Footer
     $ROOT.insertAdjacentElement('afterend', $footer)
 
     // --> Contenido Del Footer
     $footer.insertAdjacentElement('beforebegin', devolverDivRegistrarse())
     
     // --> Funcionalidad Para Boton de: ir al top de SPA
-    Router()
     devolverBotonIrArriba()
-    
-
+  
+    // --> Router
+    Router()
+  
 }

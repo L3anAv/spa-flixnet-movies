@@ -72,6 +72,9 @@ function manejadorContenidos(){
             
 
     // TEST
+    console.log(window.location.origin)
+    console.log(window.location.port)
+    console.log(window.location.href)
     console.log(window.location.path)
 
     // --> Vacio el main antes de insertar nuevo contenido

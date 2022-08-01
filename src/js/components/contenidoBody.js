@@ -115,7 +115,7 @@ export function devolverContenidoDe(lugar, ruta){
                     $section.appendChild(crearDiv(movies[i], titulo));
                 } else if (ruta == "estrenos") {
                     const titulo = movies[i].title.substring(0,24);
-                    section.appendChild(crearDiv(movies[i], titulo));
+                    $section.appendChild(crearDiv(movies[i], titulo));
                 }
             }
         })

@@ -71,6 +71,9 @@ function manejadorContenidos(){
           estrenos = 'estrenos';     
             
 
+    // TEST
+    console.log(window.location)
+
     // --> Vacio el main antes de insertar nuevo contenido
     $ROOT.innerText = ''
 

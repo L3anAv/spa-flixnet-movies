@@ -78,7 +78,7 @@ function manejadorContenidos(){
     $ROOT.innerText = ''
 
     // --> Contenido segun Path
-    if(path === "/" || path === "/index.html" || path === ""){
+    if(path === "/" || path === "/index.html" || window.location === "https://l3anav.github.io/SPA-Movies/"){
 
         $ROOT.appendChild(SliderParaBody(movies));
         $ROOT.appendChild(contenidoParaBody(movies));

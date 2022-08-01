@@ -72,13 +72,13 @@ function manejadorContenidos(){
             
 
     // TEST
-    console.log(window.location)
+    console.log(window.location.path)
 
     // --> Vacio el main antes de insertar nuevo contenido
     $ROOT.innerText = ''
 
     // --> Contenido segun Path
-    if(path === "/" || path === "/index.html" || window.location === "https://l3anav.github.io/SPA-Movies/"){
+    if(path === "/" || path === "/index.html" ){
 
         $ROOT.appendChild(SliderParaBody(movies));
         $ROOT.appendChild(contenidoParaBody(movies));

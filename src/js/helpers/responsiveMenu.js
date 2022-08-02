@@ -19,7 +19,7 @@ export function funcionalidadMenuResponsive(){
             $nav.classList.remove("nav-bar")
             $nav.classList.add("nav-bar-changed")
              
-            $botonMenuResponsive.style.fontSize = "35px" 
+            $botonMenuResponsive.style.fontSize = "35px"
             $botonMenuResponsive.style.color = "#cc0000"
             $botonMenuResponsive.classList.replace("fa-bars","fa-xmark")
 

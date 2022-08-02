@@ -175,6 +175,7 @@ header{
 
     .nav-bar-changed{
         display: flex;
+        width: 75%;
         transform: translateX(0%);
         visibility: visible;
         transition: 0.8s transform;
@@ -548,10 +549,29 @@ header{
 
 @media (max-width: 700px) {
     
+    .registrarse-antes-footer{
+
+        width: 32%;
+        display: flex;
+        padding: 8px;
+        margin-top: 10px;
+        border-radius: 25px;
+        background: none;
+        justify-content: center;
+    
+    }
+
+    .registrarse-antes-footer p{
+    
+        display: none;
+    }
+
     .registrarse-antes-footer button{
 
         height: 30px;
-        margin-top: 18%;
+        font-size: 13px;
+        margin-top: 5px;
+        margin-bottom: 5px;
         border-radius: 10px;
 
     }

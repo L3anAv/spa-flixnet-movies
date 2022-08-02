@@ -70,14 +70,6 @@ function manejadorContenidos(){
           tvseries = 'TVseries',
           estrenos = 'estrenos';     
             
-
-    // TEST
-    
-    console.log(window.location.href)
-    console.log(window.location.origin)
-    console.log(window.location.hostname)
-
-    console.log(window.location.href === "https://l3anav.github.io/SPA-Movies/")
     // --> Vacio el main antes de insertar nuevo contenido
     $ROOT.innerText = ''
 

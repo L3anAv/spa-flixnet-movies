@@ -28,7 +28,7 @@ export function ventanaModal(id){
     // --> Fetch segun Path 
     const path = window.location.pathname
 
-    if(path === "/"){
+    if(path === "/" || path === "/index.html" || window.location.href === "https://l3anav.github.io/SPA-Movies/"){
         fetch(rutaFinalPeliculas)
         .then(response => response.json())
         .then(respuesta => {
@@ -36,7 +36,7 @@ export function ventanaModal(id){
        $ventanaModal.appendChild($fragmento)
     })
 
-    }else if(path === "/tv-series"){
+    }else if(path === "/tv-series" || window.location.href === "https://l3anav.github.io/SPA-Movies/"){
         fetch(rutaFinalTVSeries)
         .then(response => response.json())
         .then(respuesta => {

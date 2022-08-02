@@ -142,9 +142,15 @@
         
     }
 
+    .contenedor-img-p{
+        display: grid;
+        grid-template-columns:100%;
+    }
+
     .contenedor-img-p p {
 
         margin-top: 25px;
+        margin-left: 25px;
         margin-right: 25px;
         font-weight: 500;
         font-size: 13px;

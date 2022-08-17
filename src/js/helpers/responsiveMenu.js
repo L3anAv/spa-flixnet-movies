@@ -6,13 +6,12 @@ export function funcionalidadMenuResponsive(){
     
     // --> Elementos del DOOM
     const $botonMenuResponsive = d.querySelector(".menu-responsive")
-    const $nav = d.querySelector(".nav-bar")
+    const $nav = d.querySelector(".nav-bar") || d.querySelector(".nav-bar-changed")
 
     // --> Funcionalidad del Boton Para Menu Responsive
     $botonMenuResponsive.addEventListener('click', () => {    
 
         const navClass = $nav.className
-        console.log(navClass)
 
         if(navClass === "nav-bar"){
 
@@ -40,14 +39,20 @@ export function funcionalidadMenuResponsive(){
 
 export function cerarMenu(){
 
-    const $botonMenuResponsive = d.querySelector(".menu-responsive")
-    const $nav = d.querySelector(".nav-bar-changed")
+    const ventanaSize = window.innerWidth;
 
-    $nav.classList.remove("nav-bar-changed")
-    $nav.classList.add("nav-bar")
+    if(ventanaSize <= 1015){
+
+        const $botonMenuResponsive = d.querySelector(".menu-responsive")
+        const $nav = d.querySelector(".nav-bar-changed")
+
+        $nav.classList.remove("nav-bar-changed")
+        $nav.classList.add("nav-bar")
             
-    $botonMenuResponsive.style.color = "#000"
-    $botonMenuResponsive.style.fontSize = "28px"
-    $botonMenuResponsive.classList.replace("fa-xmark", "fa-bars")
+        $botonMenuResponsive.style.color = "#000"
+        $botonMenuResponsive.style.fontSize = "28px"
+        $botonMenuResponsive.classList.replace("fa-xmark", "fa-bars")
+    }
+    
 
 }

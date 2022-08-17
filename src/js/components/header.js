@@ -4,7 +4,8 @@ const d = document
 export function devolverHeader(){
 
     // --> Creacion de Elementos
-    
+
+    const $a = d.createElement('a')
     const $i = d.createElement('i')
     const $namePage = d.createElement('h1')
     const $header = d.createElement('header')
@@ -19,6 +20,7 @@ export function devolverHeader(){
     $i.classList.add('menu-responsive')
 
     // --> Asignacion de Clases Elementos
+    $a.classList.add('aTitle')
     $namePage.classList.add('title')
     $navUl.classList.add('nav-bar-list')
     $navPrincipal.classList.add('nav-bar')
@@ -26,11 +28,17 @@ export function devolverHeader(){
     // --> Rellenando Elementos 
     $namePage.innerText = "FLIX~NET"
 
+    // --> Insertando href
+    $a.setAttribute('href', '/')
+
     // --> Insertando el Nav por Generos
     $navPrincipal.appendChild($navUl)
     
     // --> Insertando en orden los elementos
-    $header.appendChild($namePage)
+
+    $a.appendChild($namePage)
+
+    $header.appendChild($a)
     $header.appendChild($i)
     $header.appendChild($navPrincipal)
 

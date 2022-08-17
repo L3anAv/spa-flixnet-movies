@@ -1,3 +1,4 @@
+import { cerarMenu } from "../helpers/responsiveMenu.js";
 import { SliderParaBody } from "../components/slider.js";
 import { formParaLogin } from "../components/formLogin.js";
 import { contenidoParaBody } from "../components/contenidoBody.js";
@@ -22,18 +23,22 @@ const registro = document.querySelectorAll('#registro')
 /* Eventos para menu */
 inicio.addEventListener('click', (e) =>{
     colocarRuta(e)
+    cerarMenu()
 })
 
 tvSeries.addEventListener('click', (e) =>{
     colocarRuta(e)
+    cerarMenu()
 })
 
 proxima.addEventListener('click', (e) =>{
     colocarRuta(e)
+    cerarMenu()
 })
 
 registro[0].addEventListener('click', (e) => {
     colocarRuta(e)
+    cerarMenu()
 })
 
 registro[1].addEventListener('click', (e) => {
@@ -43,6 +48,7 @@ registro[1].addEventListener('click', (e) => {
 
 login.addEventListener('click', (e) => {
     colocarRuta(e)
+    cerarMenu()
 })
 
 

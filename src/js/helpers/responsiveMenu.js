@@ -37,3 +37,17 @@ export function funcionalidadMenuResponsive(){
 
     })
 }
+
+export function cerarMenu(){
+
+    const $botonMenuResponsive = d.querySelector(".menu-responsive")
+    const $nav = d.querySelector(".nav-bar-changed")
+
+    $nav.classList.remove("nav-bar-changed")
+    $nav.classList.add("nav-bar")
+            
+    $botonMenuResponsive.style.color = "#000"
+    $botonMenuResponsive.style.fontSize = "28px"
+    $botonMenuResponsive.classList.replace("fa-xmark", "fa-bars")
+
+}

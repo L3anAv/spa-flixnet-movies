@@ -28,13 +28,14 @@ export function devolverHeader(){
     // --> Rellenando Elementos 
     $a.innerText = "FLIX~NET"
 
+    // --> href title
+    $a.setAttribute('href', 'https://l3anav.github.io/SPA-Movies/')
+
     // --> Insertando el Nav por Generos
     $navPrincipal.appendChild($navUl)
     
     // --> Insertando en orden los elementos
-
     $namePage.appendChild($a)
-
     $header.appendChild($namePage)
     $header.appendChild($i)
     $header.appendChild($navPrincipal)

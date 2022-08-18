@@ -20,13 +20,13 @@ export function devolverHeader(){
     $i.classList.add('menu-responsive')
 
     // --> Asignacion de Clases Elementos
-    $a.classList.add('aTitle')
-    $namePage.classList.add('title')
+    $a.classList.add('title')
+    $namePage.classList.add('aTitle')
     $navUl.classList.add('nav-bar-list')
     $navPrincipal.classList.add('nav-bar')
 
     // --> Rellenando Elementos 
-    $namePage.innerText = "FLIX~NET"
+    $a.innerText = "FLIX~NET"
 
     // --> Insertando href
     $a.setAttribute('href', '/')
@@ -36,9 +36,9 @@ export function devolverHeader(){
     
     // --> Insertando en orden los elementos
 
-    $a.appendChild($namePage)
+    $namePage.appendChild($a)
 
-    $header.appendChild($a)
+    $header.appendChild($namePage)
     $header.appendChild($i)
     $header.appendChild($navPrincipal)
 

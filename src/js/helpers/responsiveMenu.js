@@ -6,12 +6,40 @@ export function funcionalidadMenuResponsive(){
     
     // --> Elementos del DOOM
     const $botonMenuResponsive = d.querySelector(".menu-responsive")
-    const $nav = d.querySelector(".nav-bar") || d.querySelector(".nav-bar-changed")
 
     // --> Funcionalidad del Boton Para Menu Responsive
-    $botonMenuResponsive.addEventListener('click', () => {    
+    $botonMenuResponsive.addEventListener('click', manejadorMenu)
+}
 
-        const navClass = $nav.className
+export function cerarMenu(){
+
+    const ventanaSize = window.innerWidth;
+
+    if(ventanaSize <= 1015){
+
+        
+        const $nav = d.querySelector(".nav-bar-changed")
+        const $botonMenuResponsive = d.querySelector(".menu-responsive")
+
+        $nav.classList.remove("nav-bar-changed")
+        $nav.classList.add("nav-bar")
+            
+        $botonMenuResponsive.style.color = "#000"
+        $botonMenuResponsive.style.fontSize = "28px"
+        $botonMenuResponsive.classList.replace("fa-xmark", "fa-bars")
+
+        // --> Funcionalidad del Boton Para Menu Responsive
+        $botonMenuResponsive.addEventListener('click', manejadorMenu)
+    }
+    
+
+}
+
+function manejadorMenu(){
+
+    const $nav = d.querySelector(".nav-bar") || d.querySelector(".nav-bar-changed")
+    
+    const navClass = $nav.className
 
         if(navClass === "nav-bar"){
 
@@ -32,27 +60,5 @@ export function funcionalidadMenuResponsive(){
             $botonMenuResponsive.style.fontSize = "28px"
             $botonMenuResponsive.classList.replace("fa-xmark", "fa-bars")
 
-        }
-
-    })
-}
-
-export function cerarMenu(){
-
-    const ventanaSize = window.innerWidth;
-
-    if(ventanaSize <= 1015){
-
-        const $botonMenuResponsive = d.querySelector(".menu-responsive")
-        const $nav = d.querySelector(".nav-bar-changed")
-
-        $nav.classList.remove("nav-bar-changed")
-        $nav.classList.add("nav-bar")
-            
-        $botonMenuResponsive.style.color = "#000"
-        $botonMenuResponsive.style.fontSize = "28px"
-        $botonMenuResponsive.classList.replace("fa-xmark", "fa-bars")
     }
-    
-
 }

@@ -35,6 +35,10 @@ a{
     margin: 0;
 }
 
+header > h1{
+    margin: 0;
+}
+
 body{
     background: var(--gris);
 }
@@ -44,7 +48,7 @@ header{
     justify-content: space-between;
 }
 
-header a:hover{
+header > h1 a:hover{
     text-decoration: none;
 }
 

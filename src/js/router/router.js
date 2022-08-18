@@ -14,6 +14,7 @@ export function Router(){
 const $ROOT = document.getElementById('main');
 
 /* Para manejadores de eventos */
+const titulo = document.querySelector('.aTitle')
 const login = document.querySelector('#login')
 const proxima = document.querySelector('#estrenos')
 const inicio = document.querySelector('#Peliculas')
@@ -24,6 +25,10 @@ const registro = document.querySelectorAll('#registro')
 inicio.addEventListener('click', (e) =>{
     colocarRuta(e)
     cerarMenu()
+})
+
+titulo.addEventListener('click', (e) => {
+    colocarRuta(e)
 })
 
 tvSeries.addEventListener('click', (e) =>{

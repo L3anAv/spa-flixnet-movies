@@ -28,9 +28,6 @@ export function devolverHeader(){
     // --> Rellenando Elementos 
     $a.innerText = "FLIX~NET"
 
-    // --> Insertando href
-    $a.setAttribute('href', '/')
-
     // --> Insertando el Nav por Generos
     $navPrincipal.appendChild($navUl)
     

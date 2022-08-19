@@ -40,6 +40,7 @@ function manejadorMenu(){
     const $nav = d.querySelector(".nav-bar") || d.querySelector(".nav-bar-changed")
     
     const navClass = $nav.className
+    const $botonMenuResponsive = d.querySelector(".menu-responsive")
 
         if(navClass === "nav-bar"){
 

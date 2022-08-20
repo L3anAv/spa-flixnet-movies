@@ -190,7 +190,7 @@ header > h1 a:hover{
         transition: 0.8s transform;
     }
 
-    header nav{
+    header > nav{
 
         position: fixed;
         right: 0px;
@@ -238,6 +238,7 @@ header > h1 a:hover{
         display: flex;
         justify-items: center;
         width: 500px;
+        scrollbar-width: none;
         overflow-x: scroll;
         margin-left: 1.2rem;
         margin-bottom: 1rem;
@@ -586,3 +587,4 @@ header > h1 a:hover{
     }
 
 }
+    

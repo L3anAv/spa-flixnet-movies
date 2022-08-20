@@ -4,7 +4,7 @@ const d = document
 /* Funcion que devuelve el Nav Por Generos */
 export function devolverNavSectionContenido(){
 
-    // --> Crear Nav
+    // --> Crear Elementos
     const $nav = d.createElement('nav')
 
     // --> Agregando clase Correpondiente
@@ -25,7 +25,7 @@ function devolverUl(){
     const $ul = d.createElement('ul')
 
     // --> Valor de Item li dentro de Ul
-    const Items = ["Accion","Drama", "Aventura", "Comedia", "Animacion"]
+    const Items = ["<","Accion","Drama", "Aventura", "Comedia", "Animacion", ">"]
     
     // --> Crear cada li para Ul
     Items.forEach((elemento, index) => {
@@ -51,7 +51,7 @@ function crearLi(elemento, index){
     $a.classList.add("nav-boton-por-genero")
 
     // --> Agregando Clases Especial a el primer elemento a
-    if(index === 0){
+    if(index === 1){
         $a.classList.add("nav-boton-por-genero-activo")
     }
     // --> Insertando datos Correspondientes

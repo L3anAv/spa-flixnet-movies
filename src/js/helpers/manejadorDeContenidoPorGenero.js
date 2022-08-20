@@ -46,6 +46,36 @@ export function manejadorGenerosSolicitadoPorMenu(){
 
         }   
     })
+
+    $nav.addEventListener('click', (e) => {
+
+        console.log(e.target.innerHTML)
+        const contenido = e.target.innerHTML
+
+        switch(contenido){
+            case "Accion":
+                $nav.scrollTo(0,0)
+                break;
+            case "Drama":
+                $nav.scrollTo(30,0)
+                break;
+            case "Aventura":
+                $nav.scrollTo(250,0)
+                break;
+            case "Comedia":
+                $nav.scrollTo(330,0)
+                break;
+            case "Animacion":
+                $nav.scrollTo($nav.scrollWidth,0)
+                break;
+            case "&gt;":
+                $nav.scrollTo(0,0)
+                break;
+            case "&lt;":
+                $nav.scrollTo($nav.scrollWidth,0)
+                break; 
+        }
+    })
 }
 
 function insertarContenidoEnBodyContenido(rutaDeExtraccion){

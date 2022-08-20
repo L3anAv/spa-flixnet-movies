@@ -54,7 +54,7 @@ export function manejadorGenerosSolicitadoPorMenu(){
 
         switch(contenido){
             case "Accion":
-                $nav.scrollTo(0,0)
+                $nav.scrollTo(20,0)
                 break;
             case "Drama":
                 $nav.scrollTo(30,0)

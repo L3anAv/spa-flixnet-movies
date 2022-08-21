@@ -57,7 +57,7 @@ export function manejadorGenerosSolicitadoPorMenu(){
                 $nav.scrollTo(50,0)
                 break;
             case "Drama":
-                $nav.scrollTo(60,0)
+                $nav.scrollTo(120,0)
                 break;
             case "Aventura":
                 $nav.scrollTo(250,0)

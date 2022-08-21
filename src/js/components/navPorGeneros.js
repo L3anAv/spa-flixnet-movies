@@ -26,12 +26,13 @@ function devolverUl(){
 
     // --> Valor de Item li dentro de Ul
     const Items = ["<","Accion","Drama", "Aventura", "Comedia", "Animacion", ">"]
-    
+    const largoItems = Items.length
+
     // --> Crear cada li para Ul
     Items.forEach((elemento, index) => {
         
         // --> Crear y deolver li relleno
-        const li = crearLi(elemento, index)
+        const li = crearLi(elemento, index, largoItems)
         
         // --> Inserta li en Ul
         $ul.appendChild(li)
@@ -41,7 +42,7 @@ function devolverUl(){
     return $ul
 }
 
-function crearLi(elemento, index){
+function crearLi(elemento, index ,largo){
     
     // --> Creando Elementos Necesarios
     const $a = d.createElement('a')
@@ -49,6 +50,12 @@ function crearLi(elemento, index){
 
     // --> Agregando Clases 
     $a.classList.add("nav-boton-por-genero")
+
+    const largoReal = largo - 1
+
+    if(index == 0 || index === largoReal){
+        $a.classList.add('flechas-menu-generos')
+    }
 
     // --> Agregando Clases Especial a el primer elemento a
     if(index === 1){

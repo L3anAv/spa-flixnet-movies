@@ -1,6 +1,6 @@
 /* IMPORTS */
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200&display=swap');
@@ -277,6 +277,10 @@ header > h1 a:hover{
 
 .seccion-principal nav ul li a{
     text-decoration: none;
+}
+
+.flechas-menu-generos{
+    visibility: hidden;
 }
 
 .nav-boton-por-genero{
@@ -559,6 +563,10 @@ header > h1 a:hover{
 
 @media (max-width: 700px) {
     
+    .flechas-menu-generos{
+        visibility: visible;
+    }
+
     .registrarse-antes-footer{
 
         width: 32%;

@@ -6,9 +6,14 @@ Single Page Application construida con:
 
 ![My Skills](https://skillicons.dev/icons?i=html,css,js)
 
-## SPA Preview (Desktop/PC)
-
+## SPA Preview 
+<details>
+  <summary>SPA Preview (Desktop/PC)</summary>
+  
 ![App Screenshot](/index.png)
+  
+</details>
+
 
 
 ## # Objetivos

@@ -80,7 +80,7 @@ function manejadorContenidos(){
     $ROOT.innerText = ''
 
     // --> Contenido segun Path
-    if(path === "/" || path === "/index.html" || window.location.href === "https://l3anav.github.io/spa-flixnet-movies/" || window.location.href === "https://l3anav.github.io/"){
+    if(path === "/" || path === "/index.html" || window.location.href === "https://l3anav.github.io/spa-flixnet-movies/"){
 
         $ROOT.appendChild(SliderParaBody(movies));
         $ROOT.appendChild(contenidoParaBody(movies));
